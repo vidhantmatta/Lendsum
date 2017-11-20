@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#031316">
+    
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:id="@+id/linear1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textColor="@color/textcolor"
+            android:text="Enter the amount to be sanctioned Below with the EMI tenure-"
+            android:textSize="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="17dp"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:hint="Amount"
+            android:gravity="center"
+            android:id="@+id/amount"
+            android:background="@drawable/edittextbow"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/emi"
+        android:layout_marginLeft="33dp"
+        android:layout_below="@id/linear1"
+        android:background="@android:drawable/btn_dropdown"
+        >
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="300dp"
+            android:background="@drawable/edittextbow"
+            android:layout_height="30dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/emi"
+        >
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:background="@drawable/gradient"
+            android:layout_marginTop="130dp"
+            android:id="@+id/pay"
+            android:layout_marginLeft="99dp"
+            android:text="pay"/>
+    </LinearLayout>
+    
+    
+    </RelativeLayout>

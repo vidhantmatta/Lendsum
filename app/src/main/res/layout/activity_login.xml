@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#031316">
+
+
+    <LinearLayout
+        android:id="@+id/icon"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginBottom="10dp"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ico"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="90dp"
+        android:id="@+id/usernamepanel"
+        android:layout_below="@+id/icon">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Employee ID"
+            android:background="@drawable/edittextboxwhite"
+            android:textColorHint="@color/texthintcolor"
+            android:textColor="@color/texthintcolor"
+            android:inputType="textCapSentences"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            android:id="@+id/empid" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/passwordpanel"
+        android:layout_below="@+id/usernamepanel">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Password"
+            android:background="@drawable/edittextboxwhite"
+            android:textColorHint="@color/texthintcolor"
+            android:textColor="@color/texthintcolor"
+            android:inputType="textPassword"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            android:id="@+id/password" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/buttonPanel"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/passwordpanel"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/login1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="Login"
+
+            android:layout_gravity="center_vertical"
+
+            android:textColor="#000000"
+             />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/toregister"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonPanel">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot password? Click here."
+            android:gravity="center"
+            android:layout_marginLeft="80dp"
+            android:textSize="18dp"
+            android:textColor="@color/textcolor"/>
+    </LinearLayout>
+
+</RelativeLayout>

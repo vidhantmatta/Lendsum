@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#031316">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/first"
+        android:orientation="horizontal"
+>
+
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:text="Hi, Mr. XYZ"
+            android:textSize="18dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/textcolor"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="7th Sep"
+            android:textColor="@color/textcolor"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/gradient">
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:alpha="20"
+            android:id="@+id/scan"
+            android:background="@drawable/qr"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
